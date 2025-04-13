@@ -1,13 +1,247 @@
-body {
+/* Background + font */
+html, body, #root {
+  height: 100%;
+  background-color: #11001C;
+  font-family: Arial, sans-serif;
+  color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Custom Navbar styles */
+.custom-navbar {
+  background-color: #220135;
+  border-radius: 30px;
+  padding: 10px 20px;
 }
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: rgb(167, 139, 250) !important;
+}
+
+.custom-navbar .nav-link:hover {
+  text-decoration: underline;
+}
+/* Hero section */
+.hero-container {
+  padding-top: 180px;
+  text-align: center;
+  padding-bottom: 150px;
+  height: 650px;
+
+}
+
+/* Heading styles */
+.hero-title {
+  font-size: 80px;
+  color: rgb(167, 139, 250);
+  
+}
+
+/* Paragraph styles */
+.hero-description {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Button container (to make buttons align in a row) */
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  margin: 0 10px;
+
+}
+
+/* View Projects button */
+.view-projects-btn {
+  background-color: rgb(167, 139, 250);
+  color: white;
+  border-radius: 12px;
+}
+
+/* Contact Me button */
+.contact-me-btn {
+  background-color: #11001C; /* Same as the body background color */
+  color: rgb(167, 139, 250);
+  border: 2px solid rgb(167, 139, 250);
+  border-radius: 12px;
+}
+
+/* Button hover effect */
+button:hover {
+  opacity: 0.8;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-container {
+   padding: 50px; 
+   height: 800px;/* Optional: Reduce bottom padding for mobile */
+  
+  }
+
+  .hero-title {
+    padding-top:30px ;
+    font-size: 80px;
+    padding-bottom: 70px; /* Smaller title on mobile */
+  }
+
+  .hero-description {
+    font-size: 16px; /* Smaller text for description */
+  }
+
+  .button-container {
+    margin-top: 15px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px; /* Smaller button text on mobile */
+  }
+}
+
+/* Full section background */
+.about-section {
+  background-color: #000;
+}
+
+/* Optional: Match the heading style */
+.about-heading {
+  color: rgb(167, 139, 250);
+  font-size: 48px;
+}
+
+.download-resume-btn  {
+  background-color: black;
+  color: rgb(167, 139, 250);
+  border: 2px solid rgb(167, 139, 250);
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-resume-btn:hover {
+  opacity: 0.85;
+}
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 32px;
+  }
+
+  .about-section p {
+    padding: 0 20px;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .download-resume-btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-section img {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Skills section background */
+.skills-section {
+  background-color: #11001C;
+}
+
+/* Skills section heading */
+.skills-heading {
+  color: rgb(167, 139, 250);
+  font-size: 42px;
+  font-weight: bold;
+}
+/* Card styling */
+.skill-card {
+  background-color:black !important;
+  border-radius: 12px;
+  padding: 15px;
+  color: rgb(167, 139, 250);
+  box-shadow: 0 0 0 2px rgb(167, 139, 250);
+}
+
+
+.skill-card .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(167, 139, 250); /* Title color */
+}
+
+.skill-card ul {
+  padding-left: 1.2rem;
+  margin-top: 10px;
+}
+
+.skill-card ul li {
+  margin-bottom: 6px;
+  color: rgb(167, 139, 250); /* List item color */
+}
+
+
+/* Responsive tweaks if needed */
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 32px;
+  }
+
+  .skill-card {
+    padding: 10px;
+  }
+}
+
+
+.view-btn {
+  background-color: black;
+  color: rgb(167, 139, 250);
+  border: 2px solid rgb(167, 139, 250);
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.code-btn {
+  background-color: black;
+  color: rgb(167, 139, 250);
+  border: 2px solid rgb(167, 139, 250);
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.contact-btn {
+  background-color: #11001C;
+  color: rgb(167, 139, 250);
+  border: 2px solid rgb(167, 139, 250);
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .contact-section {
+ padding: 50px;
+  }
+}
+.footer-section {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
